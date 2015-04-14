@@ -1,0 +1,30 @@
+https://www.dropbox.com/sh/tc5cds3eiiea6tu/AADE3XWqUv4aYRRYXsobk2FOa?dl=0
+
+
+install vim via addons install from zip...reboot
+
+enter java -version into putty shell and youll see java is installed
+
+copy autophs.sh to where ever in storage...i used downloads
+
+enter putty
+
+
+cd downloads
+
+chmod +x autophs.ph
+
+./autophs.sh
+
+
+will output "REMEMBER TO CHANGE WEBSERVER PORT 8080
+
+reboot
+
+from putty again
+
+check /etc/hosts and it will be right
+
+check .config folder and and autostart.sh file will there and coded...
+
+THAT's IT..shouldbe good to go...
