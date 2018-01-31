@@ -21,7 +21,7 @@ sheet_headers  = {
 	"Accept-Encoding" : "gzip, deflate, sdch, br"
 }
 
-def GetSheetIDFromSettings():
+def GetSheetIDFromSettingsZZZZZ():
 	sid = "1PgEY4s66O1Y5Of9aqs_v_tU4FZAiYt0-c-o9fI98vZg"
 	resp, content = http.request(plugin.get_setting("GSheetURL"),"HEAD")
 	try:
