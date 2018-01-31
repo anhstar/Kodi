@@ -125,6 +125,9 @@ def getItems(url_path="0", tq="select A,B,C,D,E"):
 		url, "GET",
 		headers=sheet_headers
 	)
+	
+	print "My URL: " . url
+	
 	_re = "google.visualization.Query.setResponse\((.+?)\);"
 	_json = json.loads(re.compile(_re).findall(content)[0])
 
