@@ -366,7 +366,7 @@ def AddTracking(items):
 		Danh sách các item theo chuẩn xbmcswift2.
 	'''
 	for item in items:
-		if "plugin.video.thongld.vnplaylist" in item["path"]:
+		if "plugin.video.anhstar.ownvnplaylist" in item["path"]:
 			item["path"] = "%s/%s" % (item["path"], urllib.quote_plus(item["label"]))
 	return items
 
