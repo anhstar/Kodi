@@ -10,8 +10,8 @@ tmp           = xbmc.translatePath('special://temp')
 addons_folder = xbmc.translatePath('special://home/addons')
 
 plugin         = Plugin()
-addon          = xbmcaddon.Addon("plugin.video.thongld.vnplaylist")
-pluginrootpath = "plugin://plugin.video.thongld.vnplaylist"
+addon          = xbmcaddon.Addon("plugin.video.anhstar.ownvnplaylist")
+pluginrootpath = "plugin://plugin.video.anhstar.ownvnplaylist"
 http           = httplib2.Http(cache, disable_ssl_certificate_validation=True)
 query_url      = "https://docs.google.com/spreadsheets/d/{sid}/gviz/tq?gid={gid}&headers=1&tq={tq}"
 sheet_headers  = {
@@ -27,7 +27,7 @@ def GetSheetIDFromSettings():
 	url_path : string
 		link chứa nội dung m3u playlist
 	'''
-	sid = "1zL6Kw4ZGoNcIuW9TAlHWZrNIJbDU5xHTtz-o8vpoJss"
+	sid = "1PgEY4s66O1Y5Of9aqs_v_tU4FZAiYt0-c-o9fI98vZg"
 	resp, content = http.request(plugin.get_setting("GSheetURL"),"HEAD")
 	try:
 		sid = re.compile("/d/(.+?)/").findall(resp["content-location"])[0]
